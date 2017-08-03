@@ -111,6 +111,7 @@ function c(){
 	}
 };
 
+// Show correct sprite according to movement of fly
 function showOffset(o) {
   f.style.backgroundPosition = "0px -"+o+"px";
 }
