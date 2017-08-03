@@ -10,8 +10,8 @@
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // here comes some base64 data (the fly image info) so watch out if your text editor can't handle it 
 
@@ -82,12 +82,17 @@ function move(){
 	}
 
 };
+
+// random nervous fly-like movement
 function p(){
 	if(Math.random()<0.075){
 		clearInterval(id);
 		id=setInterval('move()',30);
 	}
 };
+
+
+// when to "bounce" of edges
 function c(){
 	if(yy<0){
 		if(xx<0){
